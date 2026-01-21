@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Mời Từ Trái Tim</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #F9F6F2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-image: radial-gradient(#fafafa 2px, transparent 2px);
+            background-size: 30px 30px;
+        }
+
+        .card-container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 20px 40px rgba(58, 75, 65, 0.15);
+            padding: 15px;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .inner-paper {
+            background-color: #fffaf4; 
+            border: 1px solid #e0dcd5;
+            padding: 50px 30px;
+            text-align: center;
+            transform: rotate(-1deg);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .inner-paper::before {
+            content: '✧';
+            color: #B78D7B; 
+            font-size: 24px;
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .intro-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.3rem;
+            color: #6A7F70; 
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .names {
+            font-family: 'Pinyon Script', cursive;
+            font-size: 4.5rem;
+            color: #2C4436; 
+            line-height: 1;
+            margin: 15px 0 30px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .names span {
+            display: block;
+        }
+
+        .and-sign {
+            font-size: 2.5rem;
+            color: #B78D7B; 
+            margin: 10px 0;
+        }
+
+        .message {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .details-block {
+            border-top: 1px solid #e0dcd5;
+            padding-top: 30px;
+            font-family: 'Cormorant Garamond', serif;
+            color: #2C4436;
+        }
+
+        .time-location {
+            font-size: 1.3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .address {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .organic-decor {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #B78D7B;
+            opacity: 0.2;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .decor-tl { top: -20px; left: -20px; }
+        .decor-br { bottom: -20px; right: -20px; transform: rotate(90deg); }
+
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+        <div class="organic-decor decor-tl"></div>
+        <div class="organic-decor decor-br"></div>
+
+        <div class="inner-paper">
+            <p class="intro-text">Thân gửi những người thương mến,</p>
+            
+            <h1 class="names">
+                <span>Khuyến Dương</span>
+                <div class="and-sign">&</div>
+                <span>Misthy</span>
+            </h1>
+
+            <p class="message">
+                Chúng mình muốn chia sẻ niềm hạnh phúc giản dị này cùng bạn. 
+                Hãy đến và dành một buổi tối ấm cúng bên cạnh chúng mình khi 
+                chúng mình bắt đầu một hành trình mới.
+            </p>
+
+            <div class="details-block">
+                <div class="time-location">
+                    Mười bảy giờ ba mươi phút <br>
+                    Thứ năm, ngày 19 tháng 2 năm 2026
+                </div>
+                <div class="address">
+                    Tại khu rừng NaUy<br>
+                    Xóm Jolibee
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
