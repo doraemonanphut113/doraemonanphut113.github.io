@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Trang chủ</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<style>
+			#menu {
+				background: #0099CC;
+				height: 45px;
+				padding-left: 18px;
+				border-radius: 10px;
+				font-family: 'Open-Sans', sans-serif;
+			}
+
+			#menu ul, #menu li {
+				margin: 0 auto;
+				padding: 0;
+				list-style: none
+			}
+
+			#menu ul {
+				width: 100%;
+				text-align: left;
+			}
+
+			#menu li {
+				display: inline-block;
+				position: relative;
+			}
+
+			#menu a {
+				display: block;
+				line-height: 45px;
+				padding: 0 14px;
+				text-decoration: none;
+				color: #FFFFFF;
+				font-size: 16px;
+			}
+
+			#menu a.dropdown-arrow:after {
+				content: "\25BE";
+				margin-left: 5px;
+			}
+
+			#menu li a:hover {
+				color: #0099CC;
+				background: #F2F2F2;
+			}
+
+			#menu label:before {
+				font-size: 1.6em;
+				color: #FFFFFF;
+				content: "\2261";
+				margin-left: 20px;
+			}
+
+			#menu ul.sub-menus {
+				height: auto;
+				overflow: hidden;
+				width: 170px;
+				background: #444444;
+				position: absolute;
+				z-index: 99;
+				display: none;
+			}
+
+			#menu ul.sub-menus li {
+				display: block;
+				text-align: left;
+				width: 100%;
+			}
+
+			#menu ul.sub-menus a {
+				color: #FFFFFF;
+				font-size: 16px;
+			}
+
+			#menu li:hover ul.sub-menus {
+				display: block
+			}
+
+			#menu ul.sub-menus a:hover {
+				background: #F2F2F2;
+				color: #444444;
+			}
+		</style>
+		<meta name="author" content="Nguyễn Ân Phúc">
+		<meta name="description" content="Thiết kế Web">
+		<meta name="keywords" content="20CT2101, Thiết kế Web, CNTT, Trường Đại học Đà Lạt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://dlu.edu.vn/wp-content/uploads/2025/07/00.-Newest_DLU-Logo-1-1024x1024.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<nav id='menu'>
+			<ul>
+				<li><a href='index.html' class="active">Trang chủ</a></li>
+
+				<li><a class='dropdown-arrow' href='#'>Xem phim</a>
+					<ul class='sub-menus'>
+						<li><a href='documentary.html'>Phim tài liệu</a></li>
+						<li><a href='cartoon.html'>Phim hoạt hình</a></li>
+						<li><a href='kids.html'>Phim thiếu nhi</a></li>
+						<li><a href='funny.html'>Phim hài</a></li>
+					</ul>
+				</li>
+
+				<li><a href='musics.html'>Nghe nhạc</a></li>
+
+				<li><a href='youtube.html'>YouTube</a></li>
+			</ul>
+		</nav>
+
+		<div class="media-container">
+			<div class="media-item">
+				<img src="media/phimtailieu1.avif" alt="Phim tài liệu">
+				<h4>Phim tài liệu</h4>
+			</div>
+
+			<div class="media-item">
+				<img src="media/phimhoathinh.jpg" alt="Phim hoạt hình"> <h4>Phim hoạt hình</h4>
+			</div>
+
+			<div class="media-item">
+				<img src="media/phimthieunhi.jpg" alt="Phim thiếu nhi">
+				<h4>Phim thiếu nhi</h4>
+			</div>
+
+			<div class="media-item">
+				<img src="media/phimhai.jpg" alt="Phim hài">
+				<h4>Phim hài</h4>
+			</div>
+        
+			<div class="media-item">
+				<img src="media/nghenhac.jpg" alt="Nghe nhạc">
+				<h4>Nghe nhạc</h4>
+			</div>
+
+			<div class="media-item">
+				<img src="media/youtube.png" alt="YouTube">
+				<h4>YouTube</h4>
+			</div>
+		</div>
+	</body>
+</html>
