@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Đăng nhập</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<style>
+		</style>
+		<meta name="author" content="Nguyễn Ân Phúc">
+		<meta name="description" content="Thiết kế Web">
+		<meta name="keywords" content="20CT2101, Thiết kế Web, CNTT, Trường Đại học Đà Lạt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://dlu.edu.vn/wp-content/uploads/2025/07/00.-Newest_DLU-Logo-1-1024x1024.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="column">
+				<img src="dlu-a1.png" alt="Logo DLU">
+			</div>
+			<div class="column">
+				<h2 class="center">Đăng nhập hệ thống</h2>
+				<form method="post" action="login.php">
+					<div>
+						<label for="username">Tên đăng nhập:</label>
+						<input type="text" id="username" name="username" required>
+					</div>
+					<div>
+						<label for="password">Mật khẩu:</label>
+						<input type="password" id="password" name="password" required>
+					</div>
+					<div>
+						<button class="btn-submit" type="submit">Đăng nhập</button>
+					</div>
+					<div>
+						<button type="button" class="btn-forget">Quên mật khẩu</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

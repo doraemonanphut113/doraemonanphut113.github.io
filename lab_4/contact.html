@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="UTF-8">
+		<title>Liên hệ</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<style>
+		</style>
+		<meta name="author" content="Nguyễn Ân Phúc">
+		<meta name="description" content="Thiết kế Web">
+		<meta name="keywords" content="20CT2101, Thiết kế Web, CNTT, Trường Đại học Đà Lạt">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="https://dlu.edu.vn/wp-content/uploads/2025/07/00.-Newest_DLU-Logo-1-1024x1024.png" type="image/x-icon">
+	</head>
+
+	<body>
+		<form method="post" action="contact.php">
+			<table border="2" cellspacing="5">
+				<tr>
+					<th colspan="2">Liên hệ với chúng tôi</th>
+				</tr>
+				<tr>
+					<td class="td150 required">Nhập họ và tên</td>
+					<td><input type="text" name="fullname" required></td>
+				</tr>
+				<tr>
+					<td class="required">Nhập địa chỉ email</td>
+					<td><input type="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td class="required">Nhập số điện thoại</td>
+					<td><input type="text" name="phone" required></td>
+				</tr>
+				<tr>
+					<td>Nhập địa chỉ</td>
+					<td><input type="text" name="address"></td>
+				</tr>
+				<tr>
+					<td class="required">Chọn chủ đề</td>
+					<td>
+						<select name="topic" required>
+							<option>Hỏi đáp</option>
+							<option>Góp ý</option>
+							<option>Khiếu nại</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="required">Nhập nội dung</td>
+					<td><textarea name="content" rows="10" required></textarea></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="center">
+						<input type="reset" class="btn-reset" value="Nhập lại">
+						<input type="submit" class="btn-submit" value="Gửi">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
