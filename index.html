@@ -1,46 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Trang web của tôi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web của Doraemon An Phú</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1041/1041355.png">
+    
+    <style>
+        :root {
+            --doraemon-blue: #0096e7;
+            --doraemon-red: #dd0000;
+            --doraemon-bell: #f1c40f;
+            --doraemon-white: #ffffff;
+        }
+
+        body {
+            /* Đổi sang font Nunito cho văn bản thường */
+            font-family: 'Nunito', sans-serif; 
+            background-color: #e0f2fe;
+            background-image: radial-gradient(#0096e7 1px, transparent 1px);
+            background-size: 20px 20px;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--doraemon-white);
+            width: 100%;
+            max-width: 600px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0, 150, 231, 0.2);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            border: 5px solid var(--doraemon-blue);
+        }
+
+        .collar {
+            height: 15px;
+            background-color: var(--doraemon-red);
+            border-radius: 10px;
+            margin: 10px auto 30px;
+            width: 80%;
+            position: relative;
+        }
+
+        .bell {
+            width: 40px;
+            height: 40px;
+            background-color: var(--doraemon-bell);
+            border-radius: 50%;
+            border: 2px solid #b7950b;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .bell i {
+            color: #b7950b;
+            font-size: 14px;
+        }
+
+        h1 {
+            /* Đổi sang font Mali cho tiêu đề (nhìn giống chữ viết tay) */
+            font-family: 'Mali', cursive;
+            color: var(--doraemon-blue);
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        p.intro {
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--doraemon-red);
+            font-family: 'Mali', cursive; /* Font tiêu đề cute */
+            margin-top: 30px;
+            font-size: 1.5em;
+            border-bottom: 3px dashed var(--doraemon-blue);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        a.dora-btn {
+            display: block;
+            background-color: var(--doraemon-blue);
+            color: white;
+            text-decoration: none;
+            padding: 15px 10px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            font-weight: 800; /* Chữ đậm hơn cho dễ đọc */
+            border: 3px solid transparent;
+            box-shadow: 0 5px 0 #007bb5;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        a.dora-btn:hover {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #007bb5;
+            background-color: white;
+            color: var(--doraemon-blue);
+            border: 3px solid var(--doraemon-blue);
+        }
+
+        a.homework-btn {
+            background-color: var(--doraemon-red);
+            box-shadow: 0 5px 0 #a30000;
+        }
+        
+        a.homework-btn:hover {
+            box-shadow: 0 2px 0 #a30000;
+            color: var(--doraemon-red);
+            border: 3px solid var(--doraemon-red);
+        }
+
+        .dora-img {
+            width: 240px; /* Tăng kích thước ảnh một chút */
+            margin-bottom: -10px;
+            filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+            transition: transform 0.5s;
+            border-radius: 10px;
+        }
+        
+        .dora-img:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Chào thầy, em đã đưa được web lên GitHub Pages!</h1>
-    <p>Đây là sản phẩm đầu tay của em.</p>
 
-    <h3>Các bài tập thực hành</h3>
-    <a href="\lab_1\index.html" target="_blank">Bài thực hành buổi 1</a>
-    <br>
-    <br>
-    <a href="\lab_2\index.html" target="_blank">Bài thực hành buổi 2</a>
-    <br>
-    <br>
-    <a href="\lab_3\index.html" target="_blank">Bài thực hành buổi 3</a>
-    <br>
-    <br>
-    <a href="\lab_4\index.html" target="_blank">Bài thực hành buổi 4</a>
-    <br>
-    <br>
-    <a href="https://doraemonanphut113.github.io/lab_5/">Bài thực hành buổi 5</a>
-    <br>
-    <br>
-    <a href="\lab_6\index.html" target="_blank">Bài thực hành buổi 6</a>
-    <br>
-    <hr>
-    <h3>Các bài tập về nhà</h3>
-    <a href="bai_tap_thiep_moi.html" target="_blank">Bài tập về nhà về thiệp mời</a>
+    <div class="container">
+        <img src="doraemon.png" alt="Doraemon" class="dora-img">
+        
+        <h1>Chào thầy!</h1>
+        <p class="intro">Em đã đưa được web lên GitHub Pages!<br>Đây là sản phẩm đầu tay của em.</p>
+
+        <div class="collar">
+            <div class="bell"><i class="fas fa-bell"></i></div>
+        </div>
+
+        <h3>Các bài tập thực hành</h3>
+        
+        <div class="link-grid">
+            <a href="lab_1/index.html" class="dora-btn" target="_blank">Bài thực hành 1</a>
+            <a href="lab_2/index.html" class="dora-btn" target="_blank">Bài thực hành 2</a>
+            <a href="lab_3/index.html" class="dora-btn" target="_blank">Bài thực hành 3</a>
+            <a href="lab_4/index.html" class="dora-btn" target="_blank">Bài thực hành 4</a>
+            <a href="https://doraemonanphut113.github.io/lab_5/" class="dora-btn" target="_blank">Bài thực hành 5</a>
+            <a href="lab_6/index.html" class="dora-btn" target="_blank">Bài thực hành 6</a>
+        </div>
+
+        <h3>Các bài tập về nhà</h3>
+        <div class="link-grid" style="grid-template-columns: 1fr;">
+            <a href="bai_tap_thiep_moi.html" class="homework-btn dora-btn" target="_blank">
+                <i class="fas fa-envelope-open-text"></i> Bài tập về nhà về thiệp mời
+            </a>
+        </div>
+        
+        <p style="margin-top: 40px; font-size: 0.9em; color: #888;">
+            Made with <i class="fas fa-heart" style="color: var(--doraemon-red)"></i> by Doraemon Fan
+        </p>
+    </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
