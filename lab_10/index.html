@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #4cc9f0;
+            --bg: #f8f9fa;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            width: 100%;
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 90%;
+            margin: -40px auto 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+            text-decoration: none;
+            color: inherit;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(67, 97, 238, 0.15);
+        }
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .card h3 { margin: 10px 0; color: var(--primary); }
+        .card p { color: #666; font-size: 14px; line-height: 1.5; }
+        .footer { margin-top: auto; padding: 20px; font-size: 13px; color: #aaa; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bài thực hành Lab 10</h1>
+        <p>Xin chào!</p>
+    </div>
+
+    <div class="container">
+        <a href="calculator/index.html" class="card">
+            <span class="icon">🔢</span>
+            <h3>Máy tính cơ bản</h3>
+            <p>Thực hiện các phép tính cộng, trừ, nhân, chia cơ bản.</p>
+        </a>
+
+        <a href="advcalculator/index.html" class="card">
+            <span class="icon">🧪</span>
+            <h3>Máy tính nâng cao</h3>
+            <p>Loại máy tính xịn, đẹp, xinh xắn hơn may tính cơ bản</p>
+        </a>
+
+        <a href="register/index.html" class="card">
+            <span class="icon">📝</span>
+            <h3>Đăng ký tài khoản</h3>
+            <p>Biểu mẫu xác thực dữ liệu, kiểm tra mật khẩu và độ tuổi người dùng.</p>
+        </a>
+    </div>
+
+    <div class="footer">
+        Xin cảm ơn vì đã xem bài thực hành này!
+    </div>
+</body>
+</html>

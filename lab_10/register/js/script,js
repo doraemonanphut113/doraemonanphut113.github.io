@@ -1,0 +1,30 @@
+function validateForm() {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+
+    if (password !== confirmPassword) {
+        alert('Mật khẩu nhập lại không khớp!');
+        return false;
+    }
+    return true;
+}
+
+function validateAge() {
+    const birthdayInput = document.getElementById("birthday");
+    const birthday = new Date(birthdayInput.value);
+    const today = new Date();
+    
+    let age = today.getFullYear() - birthday.getFullYear();
+    const monthDiff = today.getMonth() - birthday.getMonth();
+    const dayDiff = today.getDate() - birthday.getDate();
+
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--;
+    }
+
+    if (age < 18) {
+        birthdayInput.setCustomValidity("Bạn phải trên 18 tuổi để đăng ký!");
+    } else {
+        birthdayInput.setCustomValidity("");
+    }
+}

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font hiện đại hỗ trợ tiếng Việt tốt */
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 550px; /* Tăng độ rộng form để thoải mái hơn */
+}
+
+h2 {
+    text-align: center;
+    color: #1c1e21;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 200px; /* Đã sửa lỗi: Tăng từ 170px lên 200px để nhãn không bị nhảy dòng */
+    text-align: right;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.required {
+    color: #e41e3f;
+    margin-left: 3px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #4caf50;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.registerbtn {
+    background-color: #4caf50;
+    color: white;
+    flex: 1;
+}
+
+.registerbtn:hover {
+    background-color: #45a049;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    color: white;
+    flex: 1;
+}
+
+.cancelbtn:hover {
+    background-color: #d32f2f;
+}
