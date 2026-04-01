@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+	<!-- Cài đặt bảng mã và viewport-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dự báo thời tiết</title>
+	
+	<!-- Link tới các file trong thư mục img-->
+	<link type="image/x-icon" href="img/favicon.ico" rel="shortcut icon" />
+	
+	<!-- Thêm thư viện jQuery từ CDN của Google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	
+	<!-- Link tới file của thư mục CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+
+<body>
+	
+	<div class="container">
+		<!-- Khu vực hiển thị hiệu ứng tải -->
+		<div id="loading">
+			<img src="img/loading.gif" alt="Đang tải...">
+		</div>
+		
+		<div id="location-info">
+			<!-- Hàng 1: Thông tin tọa độ và địa chỉ -->
+			<div class="info-row">
+			
+				<!-- Vĩ độ và kinh độ-->
+				<div id="coordinates">
+					<h3>Tọa độ:</h3>
+					<p><b>Vĩ độ</b>: <span id="latitude"></span></p>
+					<p><b>Kinh độ</b>: <span id="longitude"></span></p>
+				</div>			
+				
+				<!-- Địa điểm-->
+				<div id="address">
+					<h3>Địa điểm hiện tại:</h3>
+					<p id="address-text"></p>
+				</div>
+			</div>
+			
+			<!-- Hàng 2: Thời tiết hiện tại và dự báo theo giờ-->
+			<div class="info-row">
+				<!--Thời tiết hiện tại-->
+				<div id="weather-info">
+					<h3>Thông tin thời tiết hiện tại:</h3>
+					<p>Thời gian: <span id="current-time"></span></p>
+					<p>Nhiệt độ: <span id="temperature"></span></p>
+					<p>Tốc độ gió <span id="wind-speed"></span></p>
+					<p>Múi giờ: <span id="timezone"></span></p>
+					<p>Độ cao: <span id="elevation"></span></p>
+				</div>
+				
+				<!--Dự báo thời tiết-->
+				<div id="hourly-weather">
+					<h3>Dự báo thời tiết theo giờ:</h3>
+					<!--Các cột danh sách dự báo -->
+					<div class="hourly-header">
+						<div>Thời gian</div>
+						<div>Nhiệt độ</div>
+						<div>Độ ẩm</div>
+						<div>Tốc độ gió</div>
+					</div>
+					<!-- Vùng chứa các thẻ thời tiết từ Javascript-->
+					<div id="hourly-list"></div>
+				</div>
+			</div>
+			<!-- Khu vực hiển thị thông báo lỗi nếu có -->
+			<div id="error-message" class="error"></div>
+		</div>
+	</div>
+
+	<!-- Nhúng file Javascript xử lý logic nghiệp vụ -->
+	<script src="js/script.js"></script>
+</body>
+</html>
