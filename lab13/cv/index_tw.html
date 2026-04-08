@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<!-- Khai báo bộ mã kí tự và thiết lập viewport cho thiết bị di động -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Nguyễn Văn A | CV Online</title>
+	
+	<!-- Liên kết đến tập tin CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	
+	<!-- Nhúng thư viện html2pdf từ CDN để hỗ trợ chức năng xuất file pdf -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center relative font-sans text-gray-800">
+
+	<button type="button" class="toggle-dark fixed top-5 right-5 bg-white border border-gray-300 p-3 rounded-full shadow-md hover:bg-gray-100 transition z-50">🌙</button>
+	
+	<div id="pdf-content" class="bg-white border border-gray-300 rounded-md shadow-lg py-12 px-12 w-4/5 max-w-5xl mt-12 mb-8">
+		
+		<header class="flex items-center gap-8 border-b-2 border-gray-200 pb-8">
+            <div class="w-32 h-32 flex-shrink-0">
+				<img src="img/avatar.jpg" alt="Avatar" class="w-full h-full object-cover rounded-full border-4 border-gray-100 shadow-sm" />
+			</div>
+			<div class="grid justify-items-start">
+				<h1 class="text-5xl font-extrabold text-gray-900">Nguyễn Văn A</h1>
+				<p class="text-xl mt-3 text-blue-600 font-medium">Full-stack Developer</p>
+			</div>
+		</header>
+		
+		<main class="flex gap-x-12 mt-8">
+            
+			<div class="w-2/6 border-r-2 border-gray-100 pr-6">
+                
+				<strong class="text-xl font-semibold text-gray-900 block border-b pb-2 mb-4">📫 Liên hệ</strong>
+				<ul class="mt-2 mb-10 space-y-3 text-sm">
+					<li>
+                        <strong class="block text-gray-500 mb-1">Điện thoại</strong>
+						<span class="block text-gray-800">0901 234 567</span>
+					</li>
+					<li>
+                        <strong class="block text-gray-500 mb-1">E-mail</strong>
+						<span class="block text-gray-800">nguyenvana@gmail.com</span>
+					</li>
+					<li>
+                        <strong class="block text-gray-500 mb-1">LinkedIn</strong>
+                        <a href="https://linkedin.com/in/nguyenvana" target="_blank" class="block text-blue-600 hover:underline break-words">
+                            linkedin.com/in/nguyenvana
+                        </a>
+					</li>
+				</ul>
+
+				<strong class="text-xl font-semibold text-gray-900 block border-b pb-2 mb-4">🛠 Kỹ năng</strong>
+				<ul class="mt-2 mb-10 space-y-2 text-sm">
+					<li class="bg-gray-100 px-3 py-2 rounded text-gray-700 font-medium">Python: Data Analytics</li>
+					<li class="bg-gray-100 px-3 py-2 rounded text-gray-700 font-medium">React</li>
+					<li class="bg-gray-100 px-3 py-2 rounded text-gray-700 font-medium">Back-end Developer</li>
+					<li class="bg-gray-100 px-3 py-2 rounded text-gray-700 font-medium">Web Design</li>
+				</ul>
+			</div>
+
+			<div class="w-4/6">
+                
+                <section class="mb-10">
+					<h2 class="text-2xl pb-2 border-b-2 border-gray-200 font-bold text-gray-900">👋 Giới thiệu</h2>
+					<p class="mt-4 text-sm leading-relaxed text-gray-700 text-justify">
+                        Tôi là Nguyễn Văn A, sinh ngày 01/01/2003. Dự kiến tốt nghiệp chuyên ngành Kỹ thuật phần mềm tại khoa Công nghệ thông tin trường Đại học Đà Lạt vào tháng 6 năm 2025.
+                    </p>
+				</section>
+                
+                <section class="mb-10">
+					<h2 class="text-2xl pb-2 border-b-2 border-gray-200 font-bold text-gray-900">💼 Kinh nghiệm</h2>
+					<ul class="mt-4 space-y-6">
+						<li>
+							<p class="flex justify-between text-sm text-gray-500 mb-1">
+                                <strong class="text-lg text-gray-900 font-semibold">Công ty FPT Software</strong> 
+                                <span>02/2025 - 05/2025</span>
+                            </p>
+							<p class="text-blue-600 font-medium mb-2">Thực tập sinh</p>
+						</li>
+						<li>
+							<p class="flex justify-between text-sm text-gray-500 mb-1">
+                                <strong class="text-lg text-gray-900 font-semibold">Freelance</strong> 
+                                <span>08/2024 - 02/2025</span>
+                            </p>
+							<p class="text-blue-600 font-medium mb-2">Web Developer</p>
+						</li>
+					</ul>
+				</section>
+                
+                <section class="mb-6">
+					<h2 class="text-2xl pb-2 border-b-2 border-gray-200 font-bold text-gray-900">🚀 Dự án nổi bật</h2>
+					<ul class="mt-4 space-y-4">
+						<li class="bg-gray-50 p-4 rounded-md border border-gray-100">
+							<strong class="text-base text-gray-900 block mb-1">Website thương mại điện tử</strong>
+							<p class="text-sm text-gray-600">Xây dựng hệ thống cửa hàng trực tuyến cho ABC Store.</p>
+						</li>
+						<li class="bg-gray-50 p-4 rounded-md border border-gray-100">
+							<strong class="text-base text-gray-900 block mb-1">Website học tập trực tuyến</strong>
+							<p class="text-sm text-gray-600">Phát triển nền tảng học tập cho Trung tâm Giáo dục Star.</p>
+						</li>
+						<li class="bg-gray-50 p-4 rounded-md border border-gray-100">
+							<strong class="text-base text-gray-900 block mb-1">Nhận diện giọng nói tiếng Việt</strong>
+							<p class="text-sm text-gray-600">Tích hợp AI vào Hệ thống tra cứu tài liệu.</p>
+						</li>
+					</ul>
+				</section>
+
+			</div>
+		</main>
+	</div>
+    <button type="button" class="btn-export bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md shadow-md transition mb-6" onclick="exportPDF()">
+        📄 Xuất PDF
+    </button> 
+	
+    <footer class="mb-10 text-sm text-gray-500 text-center">
+		&copy; 2025 Nguyễn Văn A. Mọi quyền được bảo lưu.
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
