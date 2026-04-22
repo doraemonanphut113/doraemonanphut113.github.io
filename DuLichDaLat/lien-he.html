@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Form Liên hệ -->
+		<!--1. Xây dựng khung nền -->
+		<section class="section has-background-light">
+			<div class="container">
+				<!--2. Chia đôi màn hình-->
+				<div class="columns is-vcentered"> <!-- vcentered giúp 2 cột luôn căn giữa bằng nhau theo chiều dọc-->
+					<div class="column is-5">
+						<h1 class="title is-2 has-text-primary">Liên hệ với Ân Phúc</h1>
+						<p class="subtitle is-5 mt-4">Luôn luôn lắng nghe, luôn luôn hoàn thiện</p>
+						<figure class="image mt-6" style="border-radius: 20px; overflow: hidden; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+							<img src="images/lien-lac.jpeg" alt="Đà Lạt thân yêu">
+						</figure>
+					</div>
+					
+					<div class="column is-7">
+						<div class="box p-6" style="border-radius: 25px;">
+							<!-- From liên hệ -->
+							<div class="field">
+								<label class="label">Họ và tên</label>
+								<div class="control has-icons-left">
+									<input class="input" type="text" placeholder="Viết in hoa toàn bộ chữ cái ví dụ: NGUYỄN VĂN A">
+									<span class="icon is-small is-left">
+										<i class="fas fa-user"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label">Email</label>
+								<div class="control has-icons-left">
+									<input class="input " type="email" placeholder="Nhập email ví dụ như: nguyenA@gmail.com"> <!-- Xóa is-danger: viền đỏ; value="hello@: làm cho ô lúc nào cũng hiện chữ "hello@-->
+									<span class="icon is-small is-left">
+										<i class="fas fa-envelope"></i>
+									</span>
+									 <!-- Xóa luôn khối lệnh icon bên phải: <span class="icon is-small is-right">...</span>-->
+									 <!--Xóa: <i class="fas fa-exclamation-triangle"></i>: icon dấu chấm than-->
+								</div>
+							   <!-- Xóa dòng này: <p class="help is-danger">This email is invalid</p> -->
+							</div>
+
+							<div class="field">
+							  <label class="label">Lời nhắn</label>
+							  <div class="control">
+								<textarea class="textarea" placeholder="Lời nhắn hoặc mô tả vấn đề của bạn"></textarea>
+							  </div>
+							</div>
+
+							<div class="field mt-5">
+							  <div class="control">
+								<button class="button is-primary is-fullwidth is-medium" style="border-radius: 15px;">Xác nhận gửi</button> <!-- is-link là màu xanh dương -->
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
+

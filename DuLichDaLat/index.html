@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>
+				</div>
+			</div>
+		</nav>
+		
+		<!-- Banner toàn màn hình (tìm Layout -> Hero) -->
+		<section class="hero is-large has-background-primary">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-1 has-text-white"> "Welcome to Dalat city" </h1>
+					<p class="subtitle is-3 has-text-white mt-3">Paris thu nhỏ ở Việt Nam</p>
+					<a href='#kham-pha' class="button is-white is-outlined is-rounded is-medium mt-4">Khám phá cùng tôi nhé bạn ơi! </a>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Chia nội dung thành 3 cột, lắp card vào , nhấn Bulma -> Tìm column -> sửa thành 3 cột -> thêm is-multiline để cột rớt xuống khi xem trên điện thoại -->
+		<section id="kham-pha" class="section">
+			<div class="container">
+				<h2 class="title is-2 has-text-centered mb-6">Có thể bạn sẽ thích đóa!</h2>
+			</div>
+			<!-- Các cột -->
+			<!-- Cột 1 -->
+			<div class="columns is-multiline">
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/nha_tho_Chinh-toa.jpg"
+							alt="Ảnh Nhà thờ Chính tòa"
+						  />
+						</figure>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <strong>✠ Nhà thờ chính tòa Ðà Lạt</strong> (tên chính thức: Nhà thờ chính tòa Thánh Nicôla Bari, 
+						  còn có tên gọi khác là nhà thờ Con Gà vì...<a href="https://giothanhle.net/gio-le/nha-tho-chanh-toa-da-lat-nha-tho-con-ga/" target="_blank"has-text-info has-text-weight-bold">Xem thêm</a>
+						  <br />
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- Cột 2 -->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/thung-lung-tinh-yeu.jpg"
+							alt="Ảnh Thung lũng Tình yêu"
+						  />
+						</figure>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <strong>Thung lũng tình yêu</strong> ở Đà Lạt được chọn làm nơi hẹn hò
+						  lý tưởng. Nơi này đã được đổi tên thành "Thung Lũng Hòa Bình". Tuy nhiên...<a href="https://vinpearl.com/vi/thung-lung-tinh-yeu" target="_blank"has-text-info has-text-weight-bold">Xem thêm</a>
+						  <br />
+						</div>
+					  </div>
+					</div>				
+				</div>
+				
+				<!-- Cột 3 -->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/ho-than-tho-da-lat.jpg"
+							alt="Ảnh Hồ than thở"
+						  />
+						</figure>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <strong>Hồ than thở</strong>, ở đây có một câu chuyện truyền thuyết, 
+						  được coi là sự tích của hồ. Đó là câu chuyện tình lâm li bi đát của ...<a href="https://vinpearl.com/vi/ho-than-tho-da-lat" target="_blank"has-text-info has-text-weight-bold">Xem thêm</a>
+						  <br />
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>

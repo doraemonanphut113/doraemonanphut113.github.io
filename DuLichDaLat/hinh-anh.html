@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		
+		<!-- CSS CHO HIỆU ỨNG TIMELINE (DÒNG THỜI GIAN) -->
+		<style>
+            <!-- CSS Trang trí Menu và Hiệu ứng Thư Viện Ảnh -->
+		<style>
+			/* Sử dụng font chữ mặc định của Bulma (chuẩn web, không lỗi tiếng Việt) */
+            .art-heading {
+                font-weight: 300; /* Chữ mỏng thanh lịch */
+                color: #1a1a1a;
+                letter-spacing: 1px;
+            }
+
+            .art-card {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* Khung viền chứa ảnh */
+            .art-image-wrapper {
+                border-radius: 8px; /* Bo góc cực nhẹ cho tinh tế */
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.06); /* Bóng đổ rất mờ và mềm */
+                transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.6s ease;
+            }
+
+            /* Bản thân bức ảnh */
+            .art-img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.8s ease;
+            }
+
+            /* HIỆU ỨNG KHI RÊ CHUỘT: Khung ảnh bay nhẹ lên, ảnh bên trong zoom nhẹ */
+            .art-card:hover .art-image-wrapper {
+                transform: translateY(-12px);
+                box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+            }
+
+            .art-card:hover .art-img {
+                transform: scale(1.05);
+            }
+
+            /* Phần mô tả dưới bức tranh */
+            .art-caption {
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            .art-title {
+                /* Tự động dùng font mặc định của Bulma */
+                font-size: 1.15rem;
+                font-weight: 600; /* In đậm nhẹ cho rõ nét */
+                color: #2b5c3a; /* Xanh lá đậm */
+                margin-bottom: 4px;
+                transition: color 0.3s ease;
+            }
+
+            .art-subtitle {
+                font-size: 0.75rem;
+                color: #999;
+                text-transform: uppercase; /* Viết hoa toàn bộ */
+                letter-spacing: 2px; /* Thưa chữ ra cho sang trọng */
+            }
+
+            .art-card:hover .art-title {
+                color: #1e4229;
+            }
+		</style>
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Hình ảnh
+					</a>					
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 1. Ảnh bìa hero banner thực tế -->
+		<!-- Dùng linear-gradient làm tối đi ảnh để chữ màu trắng nổi bật -->
+		<!-- Không dùng Banner, dùng khoảng trắng nghệ thuật -->
+		<section class="section" style="margin-top: 15px; padding-bottom: 2rem;">
+			<div class="container has-text-centered">
+				<h1 class="title is-1 art-heading">Đà Lạt Mộng Mơ</h1>
+				<p class="subtitle is-6 has-text-grey mt-3" style="letter-spacing: 3px; text-transform: uppercase;">Triển Lãm Nhiếp Ảnh</p>
+                <!-- Đường gạch ngang nhỏ tạo điểm nhấn thanh lịch -->
+                <div style="width: 50px; height: 2px; background-color: #2b5c3a; margin: 30px auto;"></div>
+			</div>
+		</section>
+
+        <!-- Thư viện ảnh (Art Grid) -->
+        <section class="section pt-0">
+            <div class="container" style="max-width: 1100px;">
+                
+                <!-- is-variable is-6 tạo khoảng cách rộng rãi (không gian thở) giữa các bức tranh -->
+                <div class="columns is-multiline is-variable is-6">
+                    
+                    <!-- Bức tranh 1 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <!-- Đổi sang tỷ lệ dọc is-4by5 giống khung tranh -->
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/doiRadar.png" alt="Nhìn từ đỉnh Radar" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Nhìn Từ Đỉnh Langbiang</p>
+                                <p class="art-subtitle">Phong Cảnh</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bức tranh 2 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/lien-lac.jpeg" alt="Rừng thông" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Sương Sớm Tuyền Lâm</p>
+                                <p class="art-subtitle">Thiên Nhiên</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bức tranh 3 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/f-canh-dong-hoa-da-lat.webp" alt="Đường hoa" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Con Đường Mùa Thu</p>
+                                <p class="art-subtitle">Đời Sống</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bức tranh 4 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/cafe-muoi-nhien-farm-dalat9.jpg" alt="Cafe Đà Lạt" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Góc Nhỏ An Yên</p>
+                                <p class="art-subtitle">Kiến Trúc</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bức tranh 5 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/cho-dem-da-lat.jpeg" alt="Chợ Đêm" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Hơi Thở Phố Thị</p>
+                                <p class="art-subtitle">Nhịp Sống</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bức tranh 6 -->
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="art-card">
+                            <div class="art-image-wrapper image is-4by5">
+                                <img src="images/dinh-vi-toa-do-chika-farm-nong-trai-cuu-moi-toanh-o-da-lat.jpg" alt="Nông trại" class="art-img">
+                            </div>
+                            <div class="art-caption">
+                                <p class="art-title">Ngày Mới Bắt Đầu</p>
+                                <p class="art-subtitle">Nông Trại</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+		
+		
+
+            
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>		
+		
+		
+		
+		

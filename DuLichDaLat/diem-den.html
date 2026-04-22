@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>					
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 1. Ảnh bìa hero banner thực tế -->
+		<!-- Dùng linear-gradient làm tối đi ảnh để chữ màu trắng nổi bật -->
+		<section class="hero is-medium" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/dinhlangbiang.webp'); background-size: cover; background-position: center; margin-top: 50px;">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-1 has-text-white"> "Khám phá đỉnh Langbiang" </h1>
+					<p class="subtitle is-3 has-text-white mt-3">Nóc nhà của cao nguyên Lâm Viên</p>
+					<span class="tag is-primary is-medium is-rounded mt-3"><i class="fa-solid fa-star mr-2"></i> 4.1/5 Đánh giá</span>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Chia cột nội dung chiếm 8 phần, tóm tắt chiếm 4 phần -->
+		<section class="section">
+			<div class="container" style="max-width: 1200px;">
+				<div class="columns is-variable is-8"> <!-- Tạo khoảng cách rộng rãi giữa 2 cột -->
+					<!-- Cột nội dung -->
+					<div class="column is-8">
+						<div class="content is-medium has-text-justified">
+							<p class="is-size-5 has-text-grey"><strong>Khu du lịch Langbiang</strong> là một khu du lịch sinh thái đặc trưng với cảnh quan thiên nhiên xanh tốt quanh năm cùng nét văn hóa đặc sắc của các 
+							dân tộc bản địa. Đỉnh Langbiang cũng là ngọn núi cao nhất tại phố sương mù, vì vậy đứng từ đỉnh núi này, bạn có thể chiêm ngưỡng toàn cảnh thành phố Đà Lạt cũ nên thơ, huyền ảo.</p>
+							
+							<hr>
+							
+							<h2>1. Giới thiệu về Langbiang Đà Lạt</h2>
+							<p>Có thể nói, đỉnh Langbiang là một điểm đến du lịch không còn xa lạ gì đối với người dân cũng như du khách thập phương. Đây là đỉnh núi cao nhất tại Đà Lạt với độ cao 2167m so với mực nước biển.</p>
+							<p>ứng trên đỉnh núi, du khách có thể ngắm nhìn bao quát cảnh đẹp Đà Lạt với những rừng cây xanh mướt, những thung lũng mờ sương, con suối uốn lượn… tựa như một bức tranh thiên nhiên tuyệt đẹp.</p>
+							<p>Nằm ở vùng ngoại thành Đà Lạt, đỉnh Langbiang cách trung tâm thành phố khoảng 12km về phía Bắc. Để đến Langbiang, bạn sẽ đi qua những cánh đồng hoa, đồi thông và đồng cỏ xanh mướt, tạo nên một hành trình vô cùng thú vị và đẹp mắt.</p>
+							<figure class="image mt-5 mb-5" style="border-radius: 15px; overflow: hidden;">
+								<img src="images/doiRadar.png" alt="Ảnh Đồi Radar">
+									<figcaption class="has-text-centered is-size-6 mt-2 has-grey-text">Khung cảnh đồi núi Radar chập chùng</figcaption>
+							</figure>
+							
+							<hr>
+							
+							<h2>2. Sự tích Langbiang</h2>
+							<p>Không chỉ ngắm cảnh hay tham gia các hoạt động vui chơi, đến đây, bạn còn được nghe kể về câu chuyện sự tích Langbiang Đà Lạt vô cùng hấp dẫn. Người xưa kể rằng, từ lâu đã có hai bộ tộc khác nhau sinh sống dưới chân núi. Trong hai bộ tộc này, có một cô gái tên là H'Biang thuộc bộ tộc Chil và một chàng trai tên là K'Lang thuộc bộ tộc Lát.</p>
+							<p>Một ngày nọ, khi đi hái hoa quả trên ngọn núi, H'Biang bị một bầy sói hung dữ tấn công. K'Lang đã dũng cảm cứu nàng khỏi bầy sói. Cũng từ đó, hai người mang lòng yêu thương nhau.</p>
+							<p>Tuy nhiên, hai bộ tộc đã trở thành kẻ thù với nhau do một lời nguyền. Vì vậy, cả hai bên đều cấm ngăn K'Lang và H'Biang gặp nhau. Nhưng vì tình cảm quá sâu đậm nên K'Lang và H'Biang đã vượt qua mọi lễ nghi và đến với nhau. Cả hai cùng nhau bỏ lên đỉnh núi sinh sống.</p>
+							<p>Sau một thời gian, H'Biang mắc một căn bệnh nặng. K'Lang đã tìm mọi cách để chữa trị cho nàng nhưng đều không được. Chàng buộc phải trở về làng tìm sự trợ giúp, nhưng dân làng đã không giúp đỡ và còn tấn công chàng.</p>
+							<p>H'Biang đã bỏ mạng khi giúp K'Lang đỡ mũi tên. K'Lang vô cùng đau buồn và khóc không ngừng. Nước mắt của K'Lang tuôn trào, chảy thành một dòng suối lớn được gọi là Đa Nhim. Không lâu sau đó, quá đau khổ vì cái chết của vợ, K'Lang cũng ra đi.</p>
+							<p>Cái chết của hai người khiến cha của H'Biang rất hối hận. Ông quyết định thống nhất hai bộ tộc thành một bộ tộc mới là K'Ho. Hai ngôi mộ của K'Lang và H'Biang đã hóa thành hai ngọn núi nằm sát nhau, được gọi là núi Ông và núi Bà. Từ đó, cái tên Langbiang ra đời - là sự kết hợp của tên hai người tình này.</p>
+							<figure class="image mt-5 mb-5" style="border-radius: 15px; overflow: hidden;">
+								<img src="images/sutichLangBiang.png" alt="Sự tích núi LangBiang">
+									<figcaption class="has-text-centered is-size-6 mt-2 has-grey-text">Sự tích đỉnh Langbiang Đà Lạt gắn liền với câu chuyện tình cảm của K'Lang và H'Biang </figcaption>
+							</figure>
+							
+							<hr>
+							
+							<h2>3. Kinh nghiệm đi Langbiang</h2>
+							<p>Hiện nay, giá vé tham quan đỉnh Langbiang rất phải chăng, chỉ 50.000 VNĐ/người lớn và 25.000 VNĐ/vé cho trẻ em dưới 1m2. Ngoài ra, giá vé sử dụng xe Jeep để lên đỉnh núi là 120.000 VNĐ/lượt. Đối với dịch vụ gửi xe tại Langbiang, mức giá chỉ 5.000 VNĐ/xe. </p>
+							<figure class="image mt-5 mb-5" style="border-radius: 15px; overflow: hidden;">
+								<img src="images/ve.png" alt="Ảnh minh họa">
+									<figcaption class="has-text-centered is-size-6 mt-2 has-grey-text">Giá vé tham quan đỉnh Langbiang rất phải chăng</figcaption>
+							</figure>
+							<p>Khu du lịch núi Langbiang nằm cách trung tâm thành phố Đà Lạt không quá xa, chỉ khoảng 12km, mất tầm 30 phút đi xe. Đường đi đến đỉnh Langbiang cũng khá dễ đi, đường lớn đã được trải nhựa, phù hợp cho cả xe máy và ô tô lớn di chuyển.</p>
+							<p>Từ khu vực ngã 5 trước chợ Đà Lạt, bạn đi vào đường Nguyễn Văn Cừ, đến cuối đường thì rẽ phải vào đường 3/2. Sau đó, bạn tiếp tục đi khoảng 100m thì rẽ trái vào đường Phan Đình Phùng. Đến cuối đường Phan Đình Phùng thì bạn rẽ phải vào đường Xô Viết Nghệ Tĩnh. Từ đây, bạn đi đến cuối đường thì đi thẳng vào đường ĐanKia. Tiếp đó, bạn di chuyển theo trục đường ĐanKia thêm khoảng 5,5km nữa là đã đến khu du lịch Langbiang.</p>
+														
+						</div>
+					</div>
+					
+					<!-- Thêm -webkit-sticky (cho Safari) và height: max-content để chống lỗi -->
+                        <div style="position: -webkit-sticky; position: sticky; top: 80px; height: max-content;">
+                            
+                            <!-- Box 1: Tóm tắt thông tin -->
+                            <div class="box has-background-white-ter mb-4" style="border-radius: 15px;">
+                                <h3 class="title is-4 mb-5">Thông Tin Cần Biết</h3>
+                                
+                                <div class="content">
+                                    <p class="is-flex is-align-items-center mb-3">
+                                        <span class="icon has-text-primary is-medium mr-2"><i class="fa-solid fa-location-dot fa-lg"></i></span>
+                                        <span>Thị trấn Lạc Dương, Tỉnh Lâm Đồng</span>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center mb-3">
+                                        <span class="icon has-text-info is-medium mr-2"><i class="fa-solid fa-route fa-lg"></i></span>
+                                        <span>Cách trung tâm 12km (~30 phút xe)</span>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center mb-3">
+                                        <span class="icon has-text-warning is-medium mr-2"><i class="fa-solid fa-mountain fa-lg"></i></span>
+                                        <span>Đỉnh núi cao 2.169m so với mực nước biển</span>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center mb-3">
+                                        <span class="icon has-text-danger is-medium mr-2"><i class="fa-solid fa-clock fa-lg"></i></span>
+                                        <span>Giờ mở cửa 7:00 – 17:00 hàng ngày</span>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center mb-0">
+                                        <span class="icon has-text-link is-medium mr-2"><i class="fa-solid fa-phone fa-lg"></i></span>
+                                        <span>Số điện thoại 02633 839 456</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Box 2: Bảng giá vé bạn mới tạo (Được thêm Icon và in đậm giá) -->
+                            <div class="box has-background-white-ter" style="border-radius: 15px;">
+                                <h3 class="title is-4 mb-5">Bảng Giá Dịch Vụ</h3>
+                                <div class="content">
+                                    
+                                    <!-- Dùng is-justify-content-space-between để đẩy tên và giá ra 2 mép -->
+                                    <p class="is-flex is-align-items-center is-justify-content-space-between mb-3 border-bottom pb-2">
+                                        <span><span class="icon has-text-success mr-2"><i class="fa-solid fa-user"></i></span> Vé người lớn</span>
+                                        <strong class="has-text-danger">50.000 VNĐ</strong>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center is-justify-content-space-between mb-3 border-bottom pb-2">
+                                        <span><span class="icon has-text-info mr-2"><i class="fa-solid fa-child"></i></span> Vé trẻ em</span>
+                                        <strong class="has-text-danger">25.000 VNĐ</strong>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center is-justify-content-space-between mb-3 border-bottom pb-2">
+                                        <span><span class="icon has-text-grey-dark mr-2"><i class="fa-solid fa-truck-monster"></i></span> Xe Jeep (khứ hồi)</span>
+                                        <strong class="has-text-danger">120.000 VNĐ</strong>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center is-justify-content-space-between mb-3 border-bottom pb-2">
+                                        <span><span class="icon has-text-warning mr-2"><i class="fa-solid fa-fire"></i></span> Cồng chiêng</span>
+                                        <strong class="has-text-danger">250.000 VNĐ</strong>
+                                    </p>
+                                    
+                                    <p class="is-flex is-align-items-center is-justify-content-space-between mb-4">
+                                        <span><span class="icon has-text-primary mr-2"><i class="fa-solid fa-mug-hot"></i></span> Đồ uống tại quán</span>
+                                        <strong class="has-text-danger">30k - 70k</strong>
+                                    </p>
+                                </div>
+
+                                                              
+                                <!-- Nút Đặt Tour -->
+                                <a href="lien-he.html" class="button is-primary is-fullwidth is-medium" style="border-radius: 10px;">
+                                    <i class="fa-solid fa-calendar-check mr-2"></i> Đăng Ký Tour Ngay
+                                </a>
+                            </div>
+				<div>
+			</div>
+		</section>	
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>

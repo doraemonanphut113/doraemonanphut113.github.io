@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>					
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 1. Ảnh bìa hero banner thực tế -->
+		<!-- Dùng linear-gradient làm tối đi ảnh để chữ màu trắng nổi bật -->
+		<section class="hero is-medium" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('images/amthuc.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-1 has-text-white"> "No nê ở Đà Lạt nào" </h1>
+					<p class="subtitle is-3 has-text-white mt-3">"Vì tôi luôn có một chiếc bụng đói..."</p>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- 2. Nội dung các món ăn -->
+		<!-- Chia nội dung thành 3 cột, lắp card vào , nhấn Bulma -> Tìm column -> sửa thành 3 cột -> thêm is-multiline để cột rớt xuống khi xem trên điện thoại -->
+		<section class="section" style="margin-top: 0px;">
+			<div class="container">
+				<h2 class="title is-2 has-text-centered mb-3">Đặc sản địa phương, nhất định phải thử!</h2>
+				<h2 class="title is-2 has-text-centered mb-5">Top 6 món ngon nè bạn iu!</h2>
+			</div>
+			<!-- Các cột -->
+			<!-- Cột 1 -->
+			<div class="columns is-multiline">
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/lau-ga-la-e.jpg"
+							alt="Ảnh Lẩu gà lá é"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-danger is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Món nóng</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">LẨU GÀ LÁ É</p>
+						  <div class="content has-text-grey has-text-justified">
+							Lẩu gà lá é là đặc sản trứ danh từ Phú Yên, nổi tiếng nhất tại Đà Lạt, kết hợp giữa thịt gà ta săn chắc, nước dùng ngọt thanh vị ớt xiêm xanh và đặc trưng của lá é. 
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i><strong>Quán Tao Ngộ:</strong> 39 đường 3/4</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 250k - 300k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- Cột 2-->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/banhtrangnuong.png"
+							alt="Bánh tráng nướng Đà Lạt"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-warning is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Ăn vặt</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">BÁNH TRÁNG NƯỚNG ĐÀ LẠT</p>
+						  <div class="content has-text-grey has-text-justified">
+							Bánh tráng nướng là món ăn vặt đường phố nổi tiếng, được mệnh danh là "Pizza Việt Nam" với nguồn gốc từ Phan Rang hoặc Đà Lạt. 
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i><strong>Dì Đinh:</strong> 26 Hoàng Diệu</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 15k - 35k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- Cột 3-->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/banh-uot-long-ga-da-lat.jpg"
+							alt="Bánh ướt lòng gà Đà Lạt"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-info is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Ăn no</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">BÁNH ƯỚT LÒNG GÀ</p>
+						  <div class="content has-text-grey has-text-justified">
+							Bánh ướt lòng gà là món đặc sản nức tiếng của Đà Lạt, món ăn là sự kết hợp tinh tế giữa những miếng bánh ướt dẻo mềm với vị béo ngậy của lòng và thịt gà ta xé phay.  
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i><strong>Bánh ướt lòng gà Thảo:</strong> 12A Triệu Việt Vương</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 45k - 60k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- Cột 4-->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/kem-bo-Cham-Da-Lat.jpg"
+							alt="Kem Bơ Đà Lạt"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-primary is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Tráng miệng</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">KEM BƠ</p>
+						  <div class="content has-text-grey has-text-justified">
+							Kem bơ là món tráng miệng đặc sản nổi tiếng, đặc biệt tại Đà Lạt, kết hợp giữa bơ sáp xay mịn béo ngậy, kem tươi ngọt dịu và dừa khô giòn tan. 
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i><strong>Kem Bơ Phụng:</strong> 154 Nguyễn Văn Trỗi</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 25k - 30k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<!-- Cột 5-->
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/suanongbanhngot.jpg"
+							alt="Sữa nóng và bánh ngọt Đà Lạt"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-danger is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Ăn đêm</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">SỮA NÓNG VÀ BÁNH NGỌT</p>
+						  <div class="content has-text-grey has-text-justified">
+							Sữa nóng và bánh ngọt là bộ đôi hoàn hảo cho bữa đêm hoặc xế chiều, với thời tiết se lạnh ở Đà Lạt mang lại cảm giác ấm áp, thơm béo và dễ chịu. 
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i><strong>Dung Béo:</strong> 2 Nguyễn Văn Cừ</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 15k - 20k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="column is-4">
+					<div class="card">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/banh-mi-xiu-mai-da-lat.jpg"
+							alt="Ảnh Bánh mì xíu mại Đà Lạt"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-warning is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;">Ăn sáng</span>
+					  </div>
+					  <div class="card-content">
+						
+						<div class="content">
+						  <p class="title is-4 mb-3">BÁNH MÌ XÍU MẠI</p>
+						  <div class="content has-text-grey has-text-justified">
+							Món ăn gồm viên thịt băm (xíu mại) mềm ngọt nước sốt đậm đà, da heo, ăn kèm bánh mì giòn, rau thơm, dưa leo tạo nên hương vị béo ngậy, khó cưỡng. 
+						  </div>
+						  <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-primary mr-2"></i>79 đường Thông Thiên Học</p>
+                          <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong>Giá:</strong> 20k - 25k</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+				
+				
+				
+				
+				
+			</div>
+			
+			
+		</section>
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>

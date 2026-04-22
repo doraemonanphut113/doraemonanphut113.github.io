@@ -1,0 +1,29 @@
+/* Hiệu ứng chuyển động mượt mà 0.3 giây */
+.card, .box, .button {
+	trasition: all 0.3s ease-in-out;
+}
+
+/* Khi rê chuột vào thẻ card/box, nó sẽ nảy lên 5px và đổ bóng đậm hơn */
+.card:hover, .box:hover {
+	transfrom: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+/* Đảm bảo tất cả hình ảnh dù to nhỏ thế nào cũng không bị méo */
+img {
+	object-fit: cover;
+}
+
+/* Ép thẻ <a> chứa chữ "xem thêm" đổi màu khi hover */
+a.has-text-info:hover {
+	color: #ff3860 !important; /* Đổi sang màu đỏ khi rê chuột */
+}
+
+/* KHẮC PHỤC LỖI CỘT BÊN PHẢI KHÔNG CHỊU TRƯỢT (LỖI STICKY DO BULMA KHÓA TRỤC X) */
+html, body {
+    overflow-x: visible !important;
+}
+
+
+
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		
+		<!-- CSS CHO HIỆU ỨNG TIMELINE (DÒNG THỜI GIAN) -->
+		<style>
+            .timeline-container {
+                border-left: 4px solid #a7f3d0; /* Đường kẻ dọc màu xanh ngọc */
+                margin-left: 20px;
+                padding-left: 30px;
+                position: relative;
+            }
+            .timeline-item {
+                margin-bottom: 30px;
+                position: relative;
+            }
+            /* Tạo các dấu chấm tròn trên đường kẻ */
+            .timeline-item::before {
+                content: '';
+                position: absolute;
+                left: -40px; /* Canh dấu chấm nằm đúng lên đường kẻ dọc */
+                top: 5px;
+                width: 16px;
+                height: 16px;
+                background-color: #00d1b2; /* Dấu chấm màu xanh */
+                border-radius: 50%;
+                border: 3px solid white; /* Viền trắng bao quanh dấu chấm */
+                box-shadow: 0 0 0 2px #00d1b2; /* Tạo quầng sáng nhẹ */
+            }
+            /* Xóa khoảng trống thừa ở item cuối cùng */
+            .timeline-item:last-child { margin-bottom: 0; }
+		</style>
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>					
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 1. Ảnh bìa hero banner thực tế -->
+		<!-- Dùng linear-gradient làm tối đi ảnh để chữ màu trắng nổi bật -->
+		<section class="hero is-medium" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('images/rung-thong-thung-lung-vang.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-1 has-text-white"> "Thức giấc trong một câu chuyện cổ tích" </h1>
+					<p class="subtitle is-3 has-text-white mt-3">"Hãy chọn cho mình một nơi chốn thật cổ tích..."</p>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- 2. Phần Nội dung Lịch trình -->
+        <section class="section">
+            <div class="container" style="max-width: 900px;"> <!-- Bóp khung lại 900px để đọc chữ không bị mỏi mắt -->
+                
+                <!-- Nút Tải Lịch trình (Giả lập tính năng để tạo ấn tượng UX) -->
+                <div class="has-text-right mb-5">
+                    <button class="button is-primary is-outlined is-rounded">
+                        <i class="fa-solid fa-download mr-2"></i> Tải PDF Lịch Trình
+                    </button>
+                </div>
+
+                <!-- NGÀY 1 -->
+                <div class="box p-6 mb-6" style="border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                    <h2 class="title is-3 has-text-primary border-bottom pb-3"><i class="fa-solid fa-sun mr-3"></i>Ngày 1: Săn Mây & Cảm Nhận Thiên Nhiên</h2>
+                    
+                    <!-- Bắt đầu Timeline -->
+                    <div class="timeline-container mt-5">
+                        
+                        <!-- Buổi Sáng -->
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>04:30 - 08:00 | Đón Bình Minh Chốn Bồng Lai</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Dậy thật sớm, thuê xe máy và di chuyển hướng về <strong>Đồi chè Cầu Đất</strong> hoặc <strong>Đồi Thiên Phúc Đức</strong> để săn mây. Cảm giác cái lạnh buốt da thịt và ngắm nhìn những tia nắng đầu tiên xuyên qua biển mây trắng xóa là trải nghiệm không thể quên. 
+                                Sau đó, ghé ăn sáng với bánh mì xíu mại Hoàng Diệu nóng hổi.
+                            </p>
+                        </div>
+                        
+                        <!-- Buổi Trưa -->
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>11:30 - 13:30 | Nạp Năng Lượng</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Về lại khách sạn/homestay nhận phòng và cất hành lý. Nghỉ ngơi một chút rồi di chuyển đi ăn trưa với đặc sản <strong>Lẩu gà lá é Tao Ngộ</strong>. Nồi lẩu nghi ngút khói sẽ giúp bạn xua tan cái lạnh tức thì.
+                            </p>
+                        </div>
+                        
+                        <!-- Buổi Chiều -->
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>14:30 - 17:30 | Sống Ảo Chiều Thu</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Tham quan <strong>Ga Đà Lạt</strong> - nhà ga cổ nhất Đông Dương. Sau đó di chuyển đến một quán cafe view đồi thông (ví dụ: Khu đồi Dã Chiến hoặc Túi Mơ To) để ngắm hoàng hôn buông xuống, nhâm nhi tách trà ấm.
+                            </p>
+                        </div>
+
+                        <!-- Buổi Tối -->
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>19:00 - 22:00 | Khám Phá Chợ Đêm</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Dạo bước tại <strong>Chợ Âm Phủ (Chợ đêm Đà Lạt)</strong>. Thưởng thức "Pizza Đà Lạt" (bánh tráng nướng), uống sữa đậu nành nóng và mua vài chiếc áo len xinh xắn làm kỷ niệm.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- NGÀY 2 -->
+                <div class="box p-6 mb-6" style="border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                    <h2 class="title is-3 has-text-primary border-bottom pb-3"><i class="fa-solid fa-camera mr-3"></i>Ngày 2: Check-in Biểu Tượng Đà Lạt</h2>
+                    
+                    <div class="timeline-container mt-5">
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>08:00 - 11:30 | Dạo Quanh Trung Tâm</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Bắt đầu ngày mới với Bánh ướt lòng gà Tăng Bạt Hổ. Sau đó ra <strong>Quảng trường Lâm Viên</strong> chụp ảnh cùng nụ hoa Atiso và đóa hoa Dã Quỳ khổng lồ. Tiếp tục tản bộ quanh <strong>Hồ Xuân Hương</strong> lộng gió.
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>14:00 - 17:00 | Chinh Phục Tự Nhiên</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Di chuyển đến <strong>Thác Datanla</strong>, trải nghiệm hệ thống máng trượt xuyên rừng thông dài nhất Đông Nam Á. Ai thích chinh phục có thể tham gia trò chơi đu dây vượt thác (Canyoning).
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>18:30 - Tối Muộn | Thành Phố Lên Đèn</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Ăn tối với món nướng ngói BBQ giữa không khí se lạnh 15 độ. Tối đến, chạy xe đến các khu nhà lồng trồng hoa ở Trại Mát để ngắm nhìn "Thung lũng đèn đom đóm" rực rỡ trong đêm tuyệt đẹp.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NGÀY 3 -->
+                <div class="box p-6 mb-6" style="border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+                    <h2 class="title is-3 has-text-primary border-bottom pb-3"><i class="fa-solid fa-gift mr-3"></i>Ngày 3: An Yên & Mua Quà Đặc Sản</h2>
+                    
+                    <div class="timeline-container mt-5">
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>08:30 - 11:00 | Tìm Về Sự Tĩnh Lặng</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Viếng thăm <strong>Thiền Viện Trúc Lâm</strong> - một trong những thiền viện lớn nhất Việt Nam. Cảm nhận sự thanh tịnh, ngắm nhìn Hồ Tuyền Lâm xanh biếc và dạo bước trong vườn hoa được chăm chút tỉ mỉ.
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>11:30 - 14:00 | Bữa Trưa Cuối Cùng</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Thưởng thức Nem nướng Bà Hùng hoặc cơm niêu niêu đất chuẩn vị. Trả phòng homestay và chuẩn bị hành lý.
+                            </p>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <h4 class="title is-5 has-text-info mb-2"><i class="fa-regular fa-clock mr-2"></i>14:00 - 15:30 | Mua Quà & Chào Tạm Biệt</h4>
+                            <p class="has-text-grey-dark has-text-justified">
+                                Ghé tiệm đặc sản L’angfarm mua mứt dâu, trà Atiso, hồng treo gió về làm quà cho gia đình. Khởi hành ra bến xe hoặc sân bay Liên Khương, khép lại hành trình đầy ắp kỷ niệm đẹp tại Thành phố ngàn hoa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>		
+		
+		
+		
+		

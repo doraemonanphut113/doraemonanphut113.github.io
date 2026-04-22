@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8">
+		<title>Du Lịch Đà Lạt</title>
+		
+		<!-- Gọi thêm Bulma và FrontAwesome, copy trên Bulma.io phần overview, nhấn start và front awesome của c hì đó.com, css để cuối cùng để được ưu tiên cao nhất -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<!--Thanh menu -->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="index.html">
+					<strong class="has-text-primary is-size-4"><i class="fa-solid fa-leaf"></i> Du lịch Đà Lạt cùng AwFut </strong>
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-end">
+					<a href="index.html" class="navbar-item">
+						Trang chủ
+					</a>
+
+					<a href="gioi-thieu.html" class="navbar-item">
+						Giới thiệu
+					</a>
+					
+					<a href="lien-he.html" class="navbar-item">
+						Liên hệ
+					</a>
+					
+					<a href="am-thuc.html" class="navbar-item">
+						Ẩm thực
+					</a>
+					
+					<a href="cam-nang.html" class="navbar-item">
+						Cẩm nang
+					</a>
+					
+					<a href="chi-tiet-dia-diem.html" class="navbar-item">
+						Địa điểm
+					</a>
+					
+					<a href="diem-den.html" class="navbar-item">
+						Điểm đến
+					</a>
+					
+					<a href="homestay.html" class="navbar-item is-active has-background-grey-lighter has-text-dark has-text-weight-bold">
+						Homestay
+					</a>
+					
+					<a href="lich-trinh.html" class="navbar-item">
+						Lịch trình
+					</a>
+					
+					<a href="hinh-anh.html" class="navbar-item">
+						Hình ảnh
+					</a>					
+				</div>
+			</div>
+		</nav>
+		
+		<!-- 1. Ảnh bìa hero banner thực tế -->
+		<!-- Dùng linear-gradient làm tối đi ảnh để chữ màu trắng nổi bật -->
+		<section class="hero is-medium" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)), url('images/rung-thong-thung-lung-vang.jpg'); background-size: cover; background-position: center; margin-top: 50px;">
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<h1 class="title is-1 has-text-white"> "Thức giấc trong một câu chuyện cổ tích" </h1>
+					<p class="subtitle is-3 has-text-white mt-3">"Hãy chọn cho mình một nơi chốn thật cổ tích..."</p>
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- 2. Nội dung các món ăn -->
+		<!-- Chia nội dung thành 3 cột, lắp card vào , nhấn Bulma -> Tìm column -> sửa thành 3 cột -> thêm is-multiline để cột rớt xuống khi xem trên điện thoại -->
+		<section class="section" style="margin-top: 0px;">
+			<div class="container">
+				<h2 class="title is-2 has-text-centered mb-3">Nơi lưu trú lý tưởng</h2>
+				<h2 class="title is-2 has-text-centered mb-5">Top 3 homestay view cực chill tại Đà Lạt</h2>
+			</div>
+			<!-- Các cột -->
+			<!-- Cột 1 -->
+			<div class="columns is-multiline">
+				<div class="column is-4">
+					<div class="card is-flex is-flex-direction-column" style="height: 100%; border-radius: 15px; overflow: hidden;">
+					  <div class="card-image">
+						<figure class="image is-4by3">
+						  <img
+							src="images/doi-mot-nguoi-homestay.jpg"
+							alt="Ảnh Đợi một người Homestay"
+						  />
+						</figure>
+						<!--Tag nổi trên ảnh -->
+						<span class="tag is-warning is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;"><i class="fa-solid fa-star mr-1"></i>4.2 Đỉnh cao</span>
+					  </div>
+					  <div class="card-content is-flex-grow-1">
+						  <p class="title is-4 mb-2">ĐỢI MỘT NGƯỜI HOMESTAY</p>
+						  <p class="subtitle is-6 has-text-primary mb-3">View Rừng Thông & Cà Phê</p>
+						  
+						  <div class="content has-text-grey has-text-justified">
+							Điểm đặc biệt và ấn tượng nhất tại homestay Đợi Một Người đấy chính là được ngắm khung cảnh bình minh. Gỗ và kính là 2 chất liệu chủ đạo tạo nên những căn phòng cực kỳ xinh xắn tại homestay với một tông màu trầm ấm.
+						  </div>
+						  
+						  <div class="is-flex is-justify-content-space-between mb-3">
+                                <span class="has-text-grey-dark"><i class="fa-solid fa-bed mr-2"></i>1 Giường đôi</span>
+                                <span class="has-text-grey-dark"><i class="fa-solid fa-bath mr-2"></i>WC Khép kín</span>
+                          </div>
+						  
+						  <hr class="mt-2 mb-3">
+						        <p class="is-size-6"><i class="fa-solid fa-location-dot has-text-danger mr-2"></i>Đường Khởi Nghĩa Bắc Sơn, Tổ dân phố 65</p>
+                                <p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong class="has-text-danger">Dao động 850.000đ</strong> / Đêm</p>
+						
+					  </div>
+					  
+					  <footer class="card-footer has-background-white-ter">
+                            
+                            <a href="lien-he.html" class="card-footer-item has-text-primary has-text-weight-bold"><i class="fa-solid fa-check-circle mr-2"></i> Đặt Phòng</a>
+                      </footer>
+					</div>
+				</div>
+				
+				<!-- Cột 2-->
+				
+					<div class="column is-4">
+						<div class="card is-flex is-flex-direction-column" style="height: 100%; border-radius: 15px; overflow: hidden;">
+						  <div class="card-image">
+							<figure class="image is-4by3">
+							  <img
+								src="images/The-Wilder-Nest-Homestay-giua-rung-thong.jpg"
+								alt="Ảnh The Wilder-nest"
+							  />
+							</figure>
+							<!--Tag nổi trên ảnh -->
+							<span class="tag is-warning is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;"><i class="fa-solid fa-star mr-1"></i>4.3 Xuất sắc</span>
+						  </div>
+						  <div class="card-content is-flex-grow-1">
+							  <p class="title is-4 mb-2">THE WILDER-NEST</p>
+							  <p class="subtitle is-6 has-text-primary mb-3">Chân đèo nên thơ</p>
+							  
+							  <div class="content has-text-grey has-text-justified">
+								The Wilder Nest nằm bên cạnh đồi thông lộng gió, được xây dựng với thiết kế hoang sơ, mộc mạc và gần gũi. Không gian mát mẻ, thoáng đãng với hồ nước nhỏ trong xanh, những bụi cúc họa mi rung rinh trong nắng, không gian núi rừng rộng lớn bao la…
+							  </div>
+							  
+							  <div class="is-flex is-justify-content-space-between mb-3">
+									<span class="has-text-grey-dark"><i class="fa-solid fa-bed mr-2"></i>1 Giường đôi, đơn phòng Dorm</span>
+									<span class="has-text-grey-dark"><i class="fa-solid fa-mug-hot mr-2"></i>Bao ăn sáng</span>
+							  </div>
+							  
+							  <hr class="mt-2 mb-3">
+									<p class="is-size-6"><i class="fa-solid fa-location-dot has-text-danger mr-2"></i>Tuyền Lâm, thành phố Đà Lạt, Lâm Đồng</p>
+									<p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong class="has-text-danger">Dao động 300.000đ - 1.500.000đ</strong> / Đêm</p>
+							
+						  </div>
+						  
+						  <footer class="card-footer has-background-white-ter">
+								
+								<a href="lien-he.html" class="card-footer-item has-text-primary has-text-weight-bold"><i class="fa-solid fa-check-circle mr-2"></i> Đặt Phòng</a>
+						  </footer>
+						</div>
+					</div>
+				
+				<!-- Cột 3-->
+				
+					<div class="column is-4">
+						<div class="card is-flex is-flex-direction-column" style="height: 100%; border-radius: 15px; overflow: hidden;">
+						  <div class="card-image">
+							<figure class="image is-4by3">
+							  <img
+								src="images/cu_tren_cay.png"
+								alt="Ảnh Cú trên cây Homestay"
+							  />
+							</figure>
+							<!--Tag nổi trên ảnh -->
+							<span class="tag is-warning is-medium" style="position: absolute; top: 15px; right: 15px; border-radius: 8px;"><i class="fa-solid fa-star mr-1"></i>4.4 Tuyệt vời</span>
+						  </div>
+						  <div class="card-content is-flex-grow-1">
+							  <p class="title is-4 mb-2">CÚ TRÊN CÂY HOMESTAY</p>
+							  <p class="subtitle is-6 has-text-primary mb-3">Thiên nhiên kì vĩ</p>
+							  
+							  <div class="content has-text-grey has-text-justified">
+								Một ngôi làng cheo veo trên triền đồi với những chiếc tổ được làm bằng gỗ, phủ đầy hoa lá, cách trung tâm Đà Lạt khoảng 2km. Nếu bạn yêu thiên nhiên, thích sự mộc mạc, giản tiện và tự phục vụ thì đây hẳn là một thiên đường dành cho bạn.							  </div>
+							  
+							  <div class="is-flex is-justify-content-space-between mb-3">
+									<span class="has-text-grey-dark"><i class="fa-solid fa-bed mr-2"></i>1 Giường King</span>
+                                    <span class="has-text-grey-dark"><i class="fa-solid fa-tree mr-2"></i>Ban công rộng</span>
+							  </div>
+							  
+							  <hr class="mt-2 mb-3">
+									<p class="is-size-6"><i class="fa-solid fa-location-dot has-text-danger mr-2"></i>37 Đặng Thái Thân, Phường Xuân Hương –  Đà Lạt</p>
+									<p class="is-size-6 mt-2"><i class="fa-solid fa-money-bill-wave has-text-success mr-2"></i><strong class="has-text-danger">Dao động 1.056.879đ</strong> / Đêm</p>
+							
+						  </div>
+						  
+						  <footer class="card-footer has-background-white-ter">
+								
+								<a href="lien-he.html" class="card-footer-item has-text-primary has-text-weight-bold"><i class="fa-solid fa-check-circle mr-2"></i> Đặt Phòng</a>
+                          </footer>
+						</div>
+					</div>
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			
+			
+		</section>
+		
+		<!-- Chân trang, footer, tìm kiếm trên ô Bulma -->
+		<footer class="footer">
+		  <div class="content has-text-centered">
+			<p>
+			  <strong>Chúc bạn có chuyến du lịch vui vẻ nha!</strong>
+			  - Website được thiết kế bởi sinh viên <strong>Nguyễn Ân Phúc</strong>
+			</p>
+		  </div>
+		</footer>
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
